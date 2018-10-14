@@ -1,0 +1,6 @@
+sudo /sbin/ifconfig wlp3s0 down
+sudo /sbin/iwconfig wlp3s0 mode ad-hoc
+sudo /sbin/iwconfig wlp3s0 channel 1 essid MY_TCP mode ad-hoc
+sudo /sbin/ifconfig wlp3s0 up
+sudo /sbin/ifconfig wlp3s0 192.168.1.202 netmask 255.255.255.0
+
