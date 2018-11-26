@@ -1,0 +1,7 @@
+sudo service network-manager stop
+sudo ifconfig wlo1 down
+sudo iwconfig wlo1 mode ad-hoc
+sudo iwconfig wlo1 channel 1 essid PP mode ad-hoc
+sudo ifconfig wlo1 up
+sudo ifconfig wlo1 192.168.1.221 netmask 255.255.255.0
+ping 192.168.1.221
